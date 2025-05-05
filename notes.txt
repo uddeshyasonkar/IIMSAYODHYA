@@ -1,0 +1,6 @@
+axios
+motion
+react-router
+styled-components
+tailwindcss
+lenis

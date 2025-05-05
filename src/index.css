@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+}
+
+@theme {
+  --color-project-red: #d4281a;
+  --color-project-sec-red: #ffe5e4;
+  --color-project-black: #000000;
+  --color-project-green: #03480e;
+  --color-project-white: #ffffff;
+  --drop-shadow-glow: 0px 0px 35px #e95e1e;
+  --drop-shadow-glow-new: #e95e1e 0px 8px 24px, #e95e1e 0px 16px 56px,
+    #e95e1e 0px 24px 80px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+  @apply bg-project-white text-project-black;
+}
+
+.Barlow {
+  font-family: "Barlow", sans-serif;
+}
+.Zilla {
+  font-family: "Zilla Slab", serif;
+}
+
+.section {
+  @apply pt-20 lg:p-32;
+}
+
+.navbar {
+  @apply px-3 pb-2;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+
+.hardShadow {
+  box-shadow: 5px 5px black;
+}
