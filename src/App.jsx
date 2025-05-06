@@ -43,11 +43,11 @@ function WrappedApp() {
 
 function App() {
   return (
-    <ReactLenis root>
-      <BrowserRouter>
-        <WrappedApp />
-      </BrowserRouter>
-    </ReactLenis>
+    // <ReactLenis root>
+    <BrowserRouter>
+      <WrappedApp />
+    </BrowserRouter>
+    // </ReactLenis>
   );
 }
 

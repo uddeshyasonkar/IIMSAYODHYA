@@ -37,6 +37,10 @@ html {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 body {
   @apply bg-project-white text-project-black;
 }
@@ -52,9 +56,9 @@ body {
   @apply pt-20 lg:p-32;
 }
 
-.navbar {
+/* .navbar {
   @apply px-3 pb-2;
-}
+} */
 .flex-1 {
   flex: 1;
 }

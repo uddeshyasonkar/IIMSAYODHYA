@@ -5,6 +5,7 @@ import HeadingDivider from "../components/HeadingDivider";
 import Modules from "../sections/Modules";
 import CampusLife from "../sections/CampusLife";
 import Addressal from "../sections/Addressal";
+import BottomContainer from "../sections/BottomContainer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Modules />
       <CampusLife />
       <Addressal />
+      <BottomContainer />
     </div>
   );
 };

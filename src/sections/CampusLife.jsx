@@ -72,7 +72,7 @@ const CampusLife = () => {
             ))}
           </div>
         </div>
-        <div className="flex-2 bg-slate-200"></div>
+        <div className="flex-1 bg-slate-200"></div>
       </div>
     </div>
   );
