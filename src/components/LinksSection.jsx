@@ -30,35 +30,37 @@ const externalLinks = [
   { id: 2, name: "AICTE", url: "#" },
   { id: 3, name: "SWAYAM", url: "#" },
   { id: 4, name: "DigiLockers", url: "#" },
-  { id: 5, name: "Online RTI Portal, Rajasthan", url: "#" },
+  // { id: 5, name: "Online RTI Portal, Rajasthan", url: "#" },
   { id: 6, name: "B.Pharma Admissions", url: "#" },
 ];
 
 const Contact = [
-  { id: 0, name: "Badliya Chouraha, N.H.8, Ajmer" },
-  { id: 1, name: "principal@ecajmer.ac.in" },
-  { id: 2, name: "principal.eca@rajasthan.gov.in" },
-  { id: 3, name: "+911452971024" },
-  { id: 4, name: "Portal, Rajasthan" },
+  { id: 0, name: "Rauzagaon, Rudauli, Ayodhya" },
+  { id: 1, name: "iimsrauzza@gmail.com" },
+  { id: 2, name: "iimsrauzzagaon@gmail.com" },
+  { id: 3, name: "+91-8009740607" },
+  { id: 4, name: "+91-7905202014" },
   { id: 5, name: "missions" },
   { id: 6, name: "Press" },
   { id: 7, name: "NO Audit" },
-  { id: 8, name: "GST No: 08AABAP0959P1ZZ" },
+  // { id: 8, name: "GST No: 08AABAP0959P1ZZ" },
 ];
 
 const LinksSection = () => {
   return (
     <div
       id="bottomContainer"
-      className="bottomContainer px-20  w-full h-max  flex flex-row items-start justify-between gap-14 lg:gap-20 text-center "
+      className="bottomContainer px-10 lg:px-20  w-full h-max  flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-20 text-center "
     >
-      <div className="flex flex-col text-left gap-1">
-        <span className="Zilla text-base font-semibold">Useful Links</span>
+      <div className="flex flex-col text-left gap-0.5 lg:gap-1">
+        <span className="Zilla text-lg lg:text-base font-semibold">
+          Useful Links
+        </span>
         {usefulLinks.map((link) => (
           <a
             href={link.url}
             key={link.id}
-            className="Barlow text-sm cursor-pointer"
+            className="Barlow text-base lg:text-sm  cursor-pointer"
             target="_blank"
           >
             {link.name}
@@ -67,12 +69,14 @@ const LinksSection = () => {
       </div>
 
       <div className="flex flex-col text-left gap-1">
-        <span className="Zilla text-base font-semibold">Quick Links</span>
+        <span className="Zilla text-lg lg:text-base font-semibold">
+          Quick Links
+        </span>
         {quickLinks.map((link) => (
           <a
             href={link.url}
             key={link.id}
-            className="Barlow text-sm cursor-pointer"
+            className="Barlow text-base lg:text-sm  cursor-pointer"
             target="_blank"
           >
             {link.name}
@@ -81,12 +85,14 @@ const LinksSection = () => {
       </div>
 
       <div className="flex flex-col text-left gap-1">
-        <span className="Zilla text-base font-semibold">External Links</span>
+        <span className="Zilla text-lg lg:text-base font-semibold">
+          External Links
+        </span>
         {externalLinks.map((link) => (
           <a
             href={link.url}
             key={link.id}
-            className="Barlow text-sm cursor-pointer"
+            className="Barlow text-base lg:text-sm  cursor-pointer"
             target="_blank"
           >
             {link.name}
@@ -95,9 +101,11 @@ const LinksSection = () => {
       </div>
 
       <div className="flex flex-col text-left gap-1">
-        <span className="Zilla text-base font-semibold">External Links</span>
+        <span className="Zilla text-lg lg:text-base font-semibold">
+          External Links
+        </span>
         {Contact.map((link) => (
-          <span className="Barlow text-sm ">{link.name}</span>
+          <span className="Barlow text-base lg:text-sm">{link.name}</span>
         ))}
       </div>
     </div>

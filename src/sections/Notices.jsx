@@ -1,5 +1,6 @@
 import React from "react";
 import HeadingDivider from "../components/HeadingDivider";
+import Banner from "../components/Banner";
 
 const NoticesData = [
   {
@@ -33,13 +34,14 @@ const Notices = () => {
         </h2>
       </div> */}
       <HeadingDivider title="IMPORTANT NOTICE" />
-      <div className="flex flex-row gap-20 justify-center items-center  py-4">
+      {/* <div className="flex flex-row gap-20 justify-center items-center  py-4">
         {NoticesData.map((data) => (
           <a key={data.id} className="cursor-pointer">
             <h3 className="Barlow text-xl ">{data.title}</h3>
           </a>
         ))}
-      </div>
+      </div> */}
+      <Banner />
     </div>
   );
 };

@@ -10,7 +10,7 @@ const BottomContainer = () => {
       className="bottomContainer bg-gradient-to-b from-project-sec-red to-white  py-20  w-full h-max  flex flex-col items-center justify-center gap-14 lg:gap-16 text-center bg"
     >
       <Partners />
-      <Notices />
+      {/* <Notices /> */}
       <LinksSection />
     </div>
   );

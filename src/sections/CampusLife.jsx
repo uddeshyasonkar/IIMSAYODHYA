@@ -29,14 +29,14 @@ const CampusLife = () => {
       id="campusLife"
       className="campusLife py-20  w-full h-max  flex flex-row items-center justify-center gap-14 lg:gap-6 text-center"
     >
-      <div className="flex  lg:w-2/3  ">
-        <div className="Barlow flex-1 p-10 flex flex-col gap-8 items-start justify-center">
-          <div className="text-left flex flex-col gap-3 items-start ">
+      <div className="flex flex-col lg:flex-row lg:w-2/3">
+        <div className="Barlow flex-1 p-10 flex  flex-col gap-8 lg:items-start items-center  justify-center">
+          <div className="text-center lg:text-left flex flex-col gap-5 lg:gap-3 items-center lg:items-start ">
             <img src="./src/assets/Rainbow.webp" alt="" className="h-22" />
             <h2 className=" Zilla  text-4xl font-bold">
               THIS IS OUR CAMPUS LIFE
             </h2>
-            <p className=" text-lg ">
+            <p className=" text-lg text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
               in libero risus semper habitant arcu eget. Et integer facilisi
               eget.
@@ -48,7 +48,7 @@ const CampusLife = () => {
           <div className="">
             <div className="bg-white p-2 border-2 border-black hardShadow">
               <div className="bg-black">
-                <p className="p-2 text-left text-xs text-white">
+                <p className="p-2 text-left text-xs text-white ">
                   “The standard chunk of Lorem Ipsum used since the 1500s is
                   reproduced below for those interested. Sections 1.10.32 and
                   1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are

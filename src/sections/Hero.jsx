@@ -33,7 +33,7 @@ const Hero = () => {
       id="hero"
       className="hero w-full min-h-screen bg-project-white h-[80vh] lg:h-screen flex flex-col gap-14 lg:gap-6  lg:pt-36 text-center"
     >
-      <div className="relative h-full w-full flex">
+      <div className="relative h-full w-full flex lg:flex-row flex-col">
         <img
           src="./images/logocrop.webp"
           alt=""
@@ -48,14 +48,14 @@ const Hero = () => {
           />
         </div>
         {/* Text Div */}
-        <div className="flex-1 flex items-center justify-center Barlow">
-          <div className="w-3/6 flex flex-col gap-4 items-center justify-center">
+        <div className="flex-1 flex items-center justify-center Barlow ">
+          <div className="p-10 md:p-0 w-full lg:w-3/6 flex flex-col gap-4 items-center justify-center">
             {HeroData.map((data) => (
               <div className="flex justify-center items-center gap-6 ">
                 <span className=" text-4xl font-semibold">{data.number}</span>
                 <div className="flex flex-col items-start ">
                   <span className="text-lg font-medium">{data.title}</span>
-                  <span className="text-left text-base font-light ">
+                  <span className="text-left text-sm lg:text-base font-light ">
                     {data.description}
                   </span>
                 </div>
@@ -63,12 +63,12 @@ const Hero = () => {
             ))}
 
             <div className="relative mt-6">
-              <div className="w-80 h-14 rounded-full bg-transparent border-1 flex justify-center items-center gap-13 ">
+              <div className="w-60 lg:w-80 h-12 lg:h-14 rounded-full bg-transparent border-1 flex justify-center items-center gap-10 lg:gap-13 ">
                 {HeroData.map((data) => (
                   <span className="text-lg font-semibold">{data.digits}</span>
                 ))}
               </div>
-              <div className="absolute -top-2 -left-2 w-80 h-14 rounded-full bg-transparent border-1 flex justify-center items-center gap-13 "></div>
+              <div className="absolute -top-1 lg:-top-2 -left-1 lg:-left-2 w-60 lg:w-80 h-12 lg:h-14 rounded-full bg-transparent border-1 flex justify-center items-center gap-13 "></div>
             </div>
           </div>
         </div>

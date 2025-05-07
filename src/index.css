@@ -81,3 +81,7 @@ body {
 .hardShadow {
   box-shadow: 5px 5px black;
 }
+
+.MobileMenuli {
+  @apply border-b-1 border-black;
+}

@@ -21,15 +21,15 @@ const MobileMenu = styled.ul`
   width: 100%;
   padding: 12px 30px 24px 30px;
   position: absolute;
-  top: 80px;
+  top: 130px;
   left: 0;
   transition: all 0.4s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
 
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 10px,
-    rgba(255, 255, 255, 0.2) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 
@@ -46,20 +46,24 @@ const NavBar = () => {
       <div className="pr-5 flex justify-between items-center  ">
         <div className="flex items-center justify-between">
           <NavLink to="/">
-            <img src="./images/logo.webp" alt="" className="lg:h-36" />
+            <img
+              src="./images/logo.webp"
+              alt=""
+              className="w-30 lg:w-auto   lg:h-30"
+            />
           </NavLink>
 
-          <div className="title flex flex-col gap-1 items-start justify-start mt-6">
-            <h1 className="Zilla text-3xl font-bold">
+          <div className="title flex flex-col gap-1 items-start justify-start my-6 ">
+            <h1 className="Zilla w-full text-md md:text-3xl font-bold leading-6 lg:leading-8">
               INDIAN INSTITUTE OF MEDICAL SCIENCES, AYODHYA
             </h1>
 
-            <h3 className="Barlow text-sm ">
+            <h3 className="Barlow text-xs lg:text-sm ">
               Affiliated with Abdul Kalam Technical University and approved by
               the Government of Uttar Pradesh
             </h3>
 
-            <ul className="Zilla mt-4 hidden md:flex items-center justify-start list-none gap-14 text-base font-bold">
+            <ul className="Zilla my-4 lg:my-3 hidden md:flex items-center justify-start list-none gap-14 text-base font-bold">
               <li className="">
                 <NavLink to="/">HOME</NavLink>
               </li>
@@ -83,9 +87,14 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
+
+          <Mobileicon onClick={() => setisOpen(!isOpen)}>
+            {/* <MenuRounded sx={{ color: "inherit" }} /> */}
+            <span class="material-symbols-outlined">menu</span>
+          </Mobileicon>
         </div>
 
-        <ul className="Zilla flex gap-4 text-sm font-bold">
+        <ul className="Zilla hidden md:flex gap-4 text-sm font-bold">
           <li className="">
             <a href="">
               <img
@@ -109,54 +118,81 @@ const NavBar = () => {
         </ul>
       </div>
 
-      {/* <MobileMenu
+      <MobileMenu
         isOpen={isOpen}
-        className="lg:hidden  backdrop-blur-xl text-white bg-black  "
+        className="lg:hidden  backdrop-blur-xl text-project-black bg-project-white  "
       >
-        <li className="">
+        <li className="MobileMenuli ">
           <NavLink
-            to="/about"
+            to="/"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            About
+            HOME
           </NavLink>
         </li>
-
-        <li className="">
+        <li className="MobileMenuli ">
           <NavLink
-            to="/work"
+            to="/about-us"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            Work
+            ABOUT US
           </NavLink>
         </li>
-
-        <li className="">
+        <li className="MobileMenuli ">
           <NavLink
-            to="/blog"
+            to="/admissions"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            Blog
+            ADMISSIONS
           </NavLink>
         </li>
-
-        <li className="">
+        <li className="MobileMenuli ">
           <NavLink
-            to="/contact"
+            to="/courses"
             onClick={() => {
               setisOpen(!isOpen);
             }}
           >
-            Contact
+            COURSES
           </NavLink>
         </li>
-      </MobileMenu> */}
+        <li className="MobileMenuli ">
+          <NavLink
+            to="/gallery"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+          >
+            GALLERY
+          </NavLink>
+        </li>
+        <li className="MobileMenuli ">
+          <NavLink
+            to="/career"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+          >
+            CAREER
+          </NavLink>
+        </li>
+        <li className="MobileMenuli ">
+          <NavLink
+            to="/contact-us"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+          >
+            CONTACT US
+          </NavLink>
+        </li>
+      </MobileMenu>
 
       <div className="hidden md:block">
         {/* <Button Content={"Lets Talk"} /> */}
@@ -167,11 +203,6 @@ const NavBar = () => {
           /> */}
         </NavLink>
       </div>
-
-      <Mobileicon onClick={() => setisOpen(!isOpen)}>
-        {/* <MenuRounded sx={{ color: "inherit" }} /> */}
-        <span class="material-symbols-outlined">menu</span>
-      </Mobileicon>
     </nav>
   );
 };

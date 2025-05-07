@@ -7,13 +7,13 @@ const Partners = () => {
         OUR PARTNERS
       </h2>
 
-      <div className="flex flex-row items-center justify-center gap-10 lg:gap-10 text-center py-4">
+      <div className="flex flex-wrap lg:flex-nowrap flex-row items-center justify-center gap-10 lg:gap-10 text-center py-4">
         {[...Array(4)].map((_, index) => (
           <img
             key={index}
             src="./src/assets/placeholderLogo.png"
             alt={`Partner ${index + 1}`}
-            className="partner-image-class h-16 mix-blend-multiply opacity-50"
+            className="partner-image-class h-10 lg:h-16 mix-blend-multiply opacity-50"
           />
         ))}
       </div>
