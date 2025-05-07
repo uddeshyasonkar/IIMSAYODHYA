@@ -11,7 +11,7 @@ const Partners = () => {
         {[...Array(4)].map((_, index) => (
           <img
             key={index}
-            src="./src/assets/placeholderLogo.png"
+            src="./images/placeholderLogo.png"
             alt={`Partner ${index + 1}`}
             className="partner-image-class h-10 lg:h-16 mix-blend-multiply opacity-50"
           />

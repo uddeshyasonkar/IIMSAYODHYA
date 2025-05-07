@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="hero w-full min-h-screen bg-project-white h-[80vh] lg:h-screen flex flex-col gap-14 lg:gap-6  lg:pt-36 text-center"
+      className="hero w-full min-h-screen bg-project-white h-[80vh] lg:h-screen flex flex-col gap-14 lg:gap-6 mt-10 md:mt-0 lg:pt-36 text-center"
     >
       <div className="relative h-full w-full flex lg:flex-row flex-col">
         <img

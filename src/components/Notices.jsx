@@ -66,14 +66,14 @@ const Notices = () => {
                 className="text-black hover:text-red-500 transition"
                 disabled={index === 0}
               >
-                <img src="./src/assets/icons/arrow_left.png" alt="left" />
+                <img src="./images/icons/arrow_left.png" alt="left" />
               </button>
               <button
                 onClick={next}
                 className="text-black hover:text-red-500 transition"
                 disabled={index >= notices.length - visibleCount}
               >
-                <img src="./src/assets/icons/arrow_right.png" alt="right" />
+                <img src="./images/icons/arrow_right.png" alt="right" />
               </button>
             </div>
 

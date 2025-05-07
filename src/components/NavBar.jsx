@@ -96,7 +96,7 @@ const NavBar = () => {
 
         <ul className="Zilla hidden md:flex gap-4 text-sm font-bold">
           <li className="">
-            <a href="">
+            <a href="http://erp.iimsandhospital.com/" target="_blank">
               <img
                 src="./images/erpIcon.webp"
                 alt=""
@@ -106,7 +106,7 @@ const NavBar = () => {
             </a>
           </li>
           <li className="">
-            <a href="">
+            <a href="https://iimsandhospital.com/Login.aspx" target="_blank">
               <img
                 src="./images/loginIcon.webp"
                 alt=""
@@ -191,6 +191,28 @@ const NavBar = () => {
           >
             CONTACT US
           </NavLink>
+        </li>
+        <li className="MobileMenuli ">
+          <a
+            href="http://erp.iimsandhospital.com/"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+            className="font-bold"
+          >
+            ERP LOGIN
+          </a>
+        </li>
+        <li className="MobileMenuli ">
+          <a
+            href="https://iimsandhospital.com/Login.aspx"
+            onClick={() => {
+              setisOpen(!isOpen);
+            }}
+            className="font-bold"
+          >
+            LOGIN
+          </a>
         </li>
       </MobileMenu>
 
