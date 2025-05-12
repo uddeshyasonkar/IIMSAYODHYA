@@ -1,75 +1,16 @@
 import React from "react";
 import "./Banner.css";
 
-const BlobData = [
-  {
-    id: 0,
-    tilte: "Brand Research",
-    color: "#FC8817",
-    text: "white",
-    link: "",
-  },
-  {
-    id: 1,
-    tilte: "Mood Boarding",
-    color: "white",
-    text: "black",
-    link: "",
-  },
-  {
-    id: 2,
-    tilte: "Brand Guidelines",
-    color: "#FC8817",
-    text: "white",
-    link: "",
-  },
-  {
-    id: 3,
-    tilte: "Graphic Design Assets",
-    color: "white",
-    text: "black",
-    link: "",
-  },
-  {
-    id: 4,
-    tilte: "Graphic Design Prints",
-    color: "#FC8817",
-    text: "white",
-    link: "",
-  },
-  {
-    id: 5,
-    tilte: "UI/UX",
-    color: "white",
-    text: "black",
-    link: "",
-  },
-  {
-    id: 6,
-    tilte: "Brand Research",
-    color: "#FC8817",
-    text: "white",
-    link: "",
-  },
-  {
-    id: 7,
-    tilte: "Mood Boarding",
-    color: "white",
-    text: "black",
-    link: "",
-  },
-];
-
 const NoticesData = [
   {
     id: 1,
-    title: "RESULTS 2025 1st Sem",
+    title: "ADMISSION OPEN FOR SESSION 2025-26",
     description: "This is the description for notice 1.",
     url: "#",
   },
   {
     id: 2,
-    title: "RESULTS 2025 3rd Sem",
+    title: "RESULT OF O-LEVEL SESSION 2025-2026",
     description: "This is the description for notice 2.",
     url: "#",
   },

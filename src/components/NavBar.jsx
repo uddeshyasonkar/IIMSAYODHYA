@@ -43,17 +43,18 @@ const NavBar = () => {
   const [enabled, setEnabled] = useState(false);
   return (
     <nav className="navbar fixed top-0 left-0 w-full h-max  flex justify-between flex-col  lg:justify-between z-40 bg-project-sec-red shadow-lg">
-      <div className="pr-5 flex justify-between items-center  ">
-        <div className="flex items-center justify-between">
+      <div className="px-4 flex justify-between items-center  ">
+        <div className="flex gap-2 items-center justify-between">
           <NavLink to="/">
             <img
               src="./images/logo.webp"
               alt=""
-              className="w-30 lg:w-auto   lg:h-30"
+              className="w-30 lg:w-auto lg:h-25 "
             />
           </NavLink>
 
-          <div className="title flex flex-col gap-1 items-start justify-start my-6 ">
+          {/* my-6 */}
+          <div className="title flex flex-col gap-1 items-start justify-start  my-4">
             <h1 className="Zilla w-full text-md md:text-3xl font-bold leading-6 lg:leading-8">
               INDIAN INSTITUTE OF MEDICAL SCIENCES, AYODHYA
             </h1>
@@ -63,7 +64,7 @@ const NavBar = () => {
               the Government of Uttar Pradesh
             </h3>
 
-            <ul className="Zilla my-4 lg:my-3 hidden md:flex items-center justify-start list-none gap-14 text-base font-bold">
+            <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12  text-sm font-bold">
               <li className="">
                 <NavLink to="/">HOME</NavLink>
               </li>
