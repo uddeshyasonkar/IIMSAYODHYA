@@ -111,11 +111,18 @@ const Addressal = () => {
   return (
     <div
       id="addressal"
-      className="addressal py-20 w-full h-max flex flex-col items-center justify-center gap-14 lg:gap-0 text-center"
+      className="addressal py-8 lg:py-20 w-full h-max flex flex-col items-center justify-center gap-8 lg:gap-0 text-center"
     >
-      <div className="flex lg:w-2/3 flex-col lg:flex-row">
-        <div className="flex-1 flex  items-center flex-col gap-6 p-8 lg:p-8 ">
-          <img src={currentData.imgUrl} alt="" className="w-90 rounded-2xl" />
+      <div className="flex  lg:w-2/3 flex-col lg:flex-row ">
+        <div className="flex-1 flex  items-center flex-col gap-6 p-4 lg:p-8 ">
+          <div
+            className="w-70 h-80 lg:h-110 lg:w-100 rounded-2xl overflow-hidden flex justify-center items-center"
+            style={{
+              backgroundImage: `url(${currentData.imgUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
 
           <div className="">
             {/* name */}
@@ -124,6 +131,17 @@ const Addressal = () => {
             <span className="Barlow text-sm">{currentData.title}</span>
           </div>
         </div>
+
+        {/* Nav Buttons  */}
+        <div className="flex justify-center  lg:hidden gap-4  lg:mt-6 ">
+          <button onClick={handlePrev} className="px-4 py-2 cursor-pointer">
+            <img src="./images/icons/arrow_left.png" alt="left" />
+          </button>
+          <button onClick={handleNext} className="px-4 py-2 cursor-pointer">
+            <img src="./images/icons/arrow_right.png" alt="right" />
+          </button>
+        </div>
+
         <div className="Barlow flex-1 px-12 pt-8  flex flex-col gap-4 items-start  ">
           {/* preAddressal */}
           <p className="w-full Zilla text-base font-semibold">
@@ -132,14 +150,14 @@ const Addressal = () => {
 
           {/* addressal */}
           <p
-            className="Barlow font-medium text-sm lg:text-sm leading-5"
+            className="Zilla font-medium text-sm lg:text-sm leading-5"
             dangerouslySetInnerHTML={{ __html: currentData.addressal }}
           ></p>
         </div>
       </div>
 
       {/* Nav Buttons */}
-      <div className="flex gap-4 mt-6">
+      <div className="hidden lg:flex gap-4  lg:mt-6 ">
         <button onClick={handlePrev} className="px-4 py-2 cursor-pointer">
           <img src="./images/icons/arrow_left.png" alt="left" />
         </button>

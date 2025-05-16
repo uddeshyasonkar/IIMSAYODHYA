@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 
 function WrappedApp() {
   // Routes
@@ -37,6 +38,7 @@ function WrappedApp() {
 
         {/* <h1 className="Barlow text-7xl font-bold">404</h1> */}
       </Routes>
+      <Footer />
     </div>
   );
 }
