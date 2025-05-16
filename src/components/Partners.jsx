@@ -3,7 +3,7 @@ import React from "react";
 const ContactInfo = [
   {
     id: 0,
-    text: "+91-8009740607",
+    text: "+91-7905202014",
     icon: "call",
   },
   {

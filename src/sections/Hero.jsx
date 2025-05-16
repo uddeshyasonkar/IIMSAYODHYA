@@ -7,7 +7,7 @@ const HeroData = [
     digits: "160+ Seats",
     title: "160+ Seats",
     description:
-      "(D.PHARMA - 60 SEATS  |  B.PHARMA - 100 SEATS) (G.N.M | A.N.M | B.SC NURSING)",
+      "(D.PHARMA - 60 SEATS  |  B.PHARMA - 60 SEATS) (G.N.M | A.N.M | B.SC NURSING)",
   },
   {
     id: 2,
