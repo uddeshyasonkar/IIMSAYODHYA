@@ -1,5 +1,31 @@
 import React from "react";
 
+<<<<<<< Updated upstream
+=======
+const ContactInfo = [
+  {
+    id: 0,
+    text: "+91-8009740607",
+    icon: "call",
+  },
+  {
+    id: 1,
+    text: "+91-9116161612",
+    icon: "call",
+  },
+  {
+    id: 2,
+    text: "iimsrauzza@gmail.com",
+    icon: "mail",
+  },
+  {
+    id: 3,
+    text: "iimsrauzzagaon@gmail.com",
+    icon: "mail",
+  },
+];
+
+>>>>>>> Stashed changes
 const Partners = () => {
   return (
     <div className="flex justify-center flex-col items-center gap-10">

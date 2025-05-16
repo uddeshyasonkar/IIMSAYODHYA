@@ -57,6 +57,39 @@ As you peruse these pages, I invite you to join us in celebrating the accomplish
             <br />
             Warm regards,`,
   },
+  {
+    id: 0,
+    name: "Dr. D R Bhuwan",
+    title: " Secretary IIMS & Indian Hospital, Ayodhya",
+    imgUrl: "./images/secretary.png",
+    preAddressal: "A Message from the Secretary",
+    addressal: ` I am extremely happy to address you as the Secretary of IIMS & 
+INDIAN HOSPITAL.  Since its inception in the year 2012, the 
+institution has been continuously striving towards maintaining 
+high academic standards and excellence in the field of medical 
+education. 
+ <br />
+<br />
+We are committed to providing a variety of 
+opportunities to our students to help them achieve their highest 
+potential. Our aim is to inculcate in the students endurance, 
+courage, compassion and dedication towards duty, as a result of 
+which the students bring glory to themselves and the institution 
+in the years to come.
+ <br />
+            <br />
+We have a dedicated team of highly 
+qualified range of expertise who work hard to provide the latest 
+knowledge and skills to the students and as a result of this hard 
+work, our students stand strong in any competition in the world.
+ <br />
+            <br />
+ So I welcome all the new students and wish them a bright 
+future.
+ <br />
+            <br />
+            Warm regards,`,
+  },
 ];
 
 const Addressal = () => {

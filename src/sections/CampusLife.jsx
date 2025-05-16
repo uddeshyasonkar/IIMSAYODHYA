@@ -49,9 +49,10 @@ const CampusLife = () => {
               THIS IS OUR CAMPUS LIFE
             </h2>
             <p className=" text-lg text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-              in libero risus semper habitant arcu eget. Et integer facilisi
-              eget.
+              From providing a world-class education to fostering a vibrant
+              campus culture, IIMS Ayodhya is committed to nurturing the next
+              generation of healthcare leaders. Our campus is a hub of
+              innovation, collaboration.
             </p>
             <button className=" px-10 py-3 rounded-full bg-project-black text-white">
               GALLERY
@@ -61,11 +62,8 @@ const CampusLife = () => {
             <div className="bg-white p-2 border-2 border-black hardShadow">
               <div className="bg-black">
                 <p className="p-2 text-left text-xs text-white ">
-                  “The standard chunk of Lorem Ipsum used since the 1500s is
-                  reproduced below for those interested. Sections 1.10.32 and
-                  1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
-                  also reproduced in their exact original form, accompanied by
-                  English versions from the 1914 translation by H. Rackham.”
+                  Follow us on social media to stay updated with the latest news
+                  and events at IIMS Ayodhya.
                 </p>
               </div>
             </div>

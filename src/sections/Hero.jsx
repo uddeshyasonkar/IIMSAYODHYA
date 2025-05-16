@@ -35,7 +35,11 @@ const Hero = () => {
     >
       <div className="relative h-full w-full flex lg:flex-row flex-col">
         <img
+<<<<<<< Updated upstream
           src="./images/logocrop.webp"
+=======
+          //src="./images/finallogo.webp"
+>>>>>>> Stashed changes
           alt=""
           className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:translate-x-[-50%] lg:translate-y-[-50%] h-36 lg:h-60"
         />

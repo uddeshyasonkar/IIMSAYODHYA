@@ -69,19 +69,23 @@ const NoticesData = [
   },
   {
     id: 2,
+<<<<<<< Updated upstream
     title: "RESULTS 2025 3rd Sem",
+=======
+    title: "ADMISSION OPEN FOR SESSION 2025-26",
+>>>>>>> Stashed changes
     description: "This is the description for notice 2.",
     url: "#",
   },
   {
     id: 3,
-    title: "RESULTS 2025 7th Sem",
+    title: "ADMISSION OPEN FOR SESSION 2025-26",
     description: "This is the description for notice 3.",
     url: "#",
   },
   {
     id: 4,
-    title: "RESULTS 2025 1st Sem",
+    title: "ADMISSION OPEN FOR SESSION 2025-26",
     description: "This is the description for notice 4.",
     url: "#",
   },

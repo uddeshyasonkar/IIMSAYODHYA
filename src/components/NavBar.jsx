@@ -47,7 +47,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <NavLink to="/">
             <img
-              src="./images/logo.webp"
+              src="./images/finallogo.webp"
               alt=""
               className="w-30 lg:w-auto   lg:h-30"
             />
