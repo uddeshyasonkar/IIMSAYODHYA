@@ -8,7 +8,7 @@ const ContactInfo = [
   },
   {
     id: 1,
-    text: "+91-7905202014",
+    text: "+91-9116161612",
     icon: "call",
   },
   {

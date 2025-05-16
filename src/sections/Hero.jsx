@@ -34,9 +34,9 @@ const Hero = () => {
     >
       <div className="relative h-full w-full flex lg:flex-row flex-col">
         <img
-          src="./images/logo.webp"
-          alt=""
-          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:translate-x-[-50%] lg:translate-y-[-50%] h-28 lg:h-40"
+        //src="./images/logo.webp"
+        //alt=""
+        //className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:translate-x-[-50%] lg:translate-y-[-50%] h-28 lg:h-40"
         />
         {/* Photo Div */}
         <div className="bg-gray-200 flex-1 flex items-center justify-center overflow-hidden">

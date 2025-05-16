@@ -43,7 +43,7 @@ const Contact = [
   { id: 3, name: "iimsrauzza@gmail.com" },
   { id: 4, name: "iimsrauzzagaon@gmail.com" },
   { id: 5, name: "+91-8009740607" },
-  { id: 6, name: "+91-7905202014" },
+  { id: 6, name: "+91-9116161612" },
   // { id: 7, name: "missions" },
   // { id: 8, name: "Press" },
   // { id: 9, name: "NO Audit" },
