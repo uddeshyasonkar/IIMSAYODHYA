@@ -61,7 +61,8 @@ const NavBar = () => {
 
             <h3 className="Barlow text-xs lg:text-sm ">
               Affiliated with Abdul Kalam Technical University and approved by
-              the Government of Uttar Pradesh
+              the Government of Uttar Pradesh & Affiliated with Indian nursing
+              council
             </h3>
 
             <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12  text-sm font-bold">
