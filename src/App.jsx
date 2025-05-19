@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactLenis from "lenis/react";
+import LocomotiveScroll from "locomotive-scroll";
 
 import NavBar from "./components/NavBar";
 
@@ -44,12 +45,32 @@ function WrappedApp() {
 }
 
 function App() {
+  // useEffect(() => {
+  //   const lenis = new LocomotiveScroll({
+  //     el: document.querySelector("[data-scroll-container]"),
+  //     smooth: true,
+  //     multiplier: 1.5,
+  //     class: "is-reveal",
+  //     smartphone: {
+  //       smooth: true,
+  //       direction: "horizontal",
+  //     },
+  //   });
+  //   lenis.on("scroll", (e) => {
+  //     console.log(e);
+  //   });
+  //   return () => {
+  //     lenis.destroy();
+  //   };
+
+  //   // const locomotiveScroll = new LocomotiveScroll();
+  // }, []);
   return (
-    <ReactLenis root>
-      <BrowserRouter>
-        <WrappedApp />
-      </BrowserRouter>
-    </ReactLenis>
+    // <ReactLenis root>
+    <BrowserRouter>
+      <WrappedApp />
+    </BrowserRouter>
+    //  </ReactLenis>
   );
 }
 
