@@ -51,29 +51,47 @@ const CourseGrid = () => {
   return (
     <div
       id="modules"
-      className="hero p-5 lg:py-20 w-full h-max bg-project-white flex flex-col items-center gap-14 lg:gap-6 text-center"
+      className="CourseGrid px-5 py-12 lg:py-20 w-full h-max  flex flex-col items-center gap-10 lg:gap-10 text-center "
     >
-      {/* <h2 className="Zilla text-project-red text-2xl font-bold">COURSES</h2> */}
-      <div className="w-max grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 px-4 place-items-center">
-        {ModulesData.map((data) => (
-          <div
-            key={data.id}
-            className="w-35 h-35 lg:w-60 lg:h-50 p-6 bg-gray-100 hover:bg-project-sec-red transition ease-in-out hover:scale-105 shadow-xl rounded-lg flex flex-col items-center justify-center"
-          >
-            <div className="flex flex-col items-center">
-              {/* icons div */}
-              {/* <div className="flex-2 flex items-center justify-center">
-                <img src={data.icon} alt="" className="h-8 lg:h-12" />
-              </div> */}
-              {/* text div */}
-              <div className="flex-1 flex items-center justify-center mt-4">
-                <h3 className="Barlow text-sm lg:text-base font-semibold">
-                  {data.title}
-                </h3>
-              </div>
-            </div>
+      <h2 className="Zilla text-project-red text-2xl font-bold">
+        COURSES OFFERED
+      </h2>
+      <div className="border-black border-0 lg:border-2 py-4 lg:py-6 rounded-full bg-transparent lg:bg-project-white  w-full lg:w-[80%] flex flex-col lg:flex-row justify-center  lg:items-center gap-12 lg:gap-40 ">
+        <div className="Zilla courseContainer">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png"
+            alt=""
+            className="h-20"
+          />
+          <div className="courseDetailsContainer ">
+            <span className="courseSeats ">60 Seats</span>
+            <span className="courseTitle ">B-Pharma</span>
           </div>
-        ))}
+        </div>
+
+        <div className="Zilla courseContainer">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4320/4320337.png"
+            alt=""
+            className="h-20"
+          />
+          <div className="courseDetailsContainer">
+            <span className="courseSeats">60 Seats</span>
+            <span className="courseTitle">D-Pharma</span>
+          </div>
+        </div>
+
+        <div className="Zilla courseContainer">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4850/4850909.png"
+            alt=""
+            className="h-20"
+          />
+          <div className="courseDetailsContainer">
+            <span className="courseTitle">G.N.M./A.N.M.</span>
+            <span className="courseTitle">B.Sc Nursing</span>
+          </div>
+        </div>
       </div>
     </div>
   );

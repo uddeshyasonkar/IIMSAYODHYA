@@ -14,6 +14,7 @@ import Career from "./pages/Career";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
+import BottomContainer from "./sections/BottomContainer";
 
 function WrappedApp() {
   // Routes
@@ -39,6 +40,8 @@ function WrappedApp() {
 
         {/* <h1 className="Barlow text-7xl font-bold">404</h1> */}
       </Routes>
+      {/* Bottom Container */}
+      <BottomContainer />
       <Footer />
     </div>
   );

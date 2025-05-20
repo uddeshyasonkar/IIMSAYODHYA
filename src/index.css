@@ -85,3 +85,17 @@ body {
 .MobileMenuli {
   @apply border-b-1 border-black;
 }
+
+.courseContainer {
+  @apply flex flex-row justify-center items-center gap-8 lg:gap-4;
+}
+.courseDetailsContainer {
+  @apply flex flex-col justify-center items-start;
+}
+.courseSeats {
+  @apply font-bold text-2xl lg:text-3xl;
+}
+
+.courseTitle {
+  @apply font-normal text-lg lg:text-2xl;
+}
