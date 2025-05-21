@@ -101,3 +101,12 @@ body {
 .courseTitle {
   @apply font-normal text-lg lg:text-2xl;
 }
+
+/* .anmBlock {
+  @apply flex flex-row justify-start items-center gap-18;
+} */
+.anmBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
