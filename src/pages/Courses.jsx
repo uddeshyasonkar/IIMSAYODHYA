@@ -11,29 +11,100 @@ const Courses = () => {
       {/* Downloadable Pdf */}
       <div
         id="courses"
-        className="courses w-full min-h-max bg-gray-300 h-[80vh] lg:h-[90vh] flex flex-col justify-center gap-14 lg:gap-6 mt-10 md:mt-0 lg:pt-32 text-center relative"
+        className="courses w-full min-h-max  h-[80vh] lg:h-[90vh] flex flex-col justify-center items-center gap-14 lg:gap-6 mt-10 md:mt-0 lg:pt-32 text-center "
       >
-        <span className="text-2xl font-semibold Zilla">VIDEO/PHOTO</span>
+        {/* <span className="text-2xl font-semibold Zilla">VIDEO/PHOTO</span> */}
 
-        <div className="border-black border-2 py-6 rounded-full bg-project-white w-[90%] lg:w-[50%] flex justify-center items-center gap-5 lg:gap-30 absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="Zilla flex flex-col">
-            <span className="font-bold text-xl lg:text-3xl">1000+</span>
-            <span className="font-semibold text-sm lg:text-xl">
-              Students Placed
-            </span>
+        <div className="border-black border-2 py-6 rounded-[70px] bg-project-white w-[90%] lg:w-[80%] flex flex-col justify-center items-center gap-5 lg:gap-3 p-10">
+          {/* B pharma */}
+          <div className="Zilla flex flex-row justify-center items-center gap-10 ">
+            <div className="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png"
+                alt=""
+                className="h-20"
+              />
+            </div>
+
+            <div className="">
+              <span className="font-bold text-project-red text-xl  lg:text-3xl">
+                B-Pharma
+              </span>
+            </div>
+
+            <div className="">
+              <span className="">
+                <span className=" font-bold">Eligibility:</span>
+                50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
+                10+2 Duration :
+                <span className="text-project-red font-semibold">4 Years</span>
+              </span>
+            </div>
           </div>
-          <div className="Zilla flex flex-col">
-            <span className="font-bold text-xl lg:text-3xl">100</span>
-            <span className="font-semibold text-sm lg:text-xl">
-              Bed Hospital
-            </span>
+          <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
+
+          {/* D pharma */}
+          <div className="Zilla flex flex-row justify-center items-center gap-10 ">
+            <div className="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/4320/4320337.png"
+                alt=""
+                className="h-20"
+              />
+            </div>
+
+            <div className="">
+              <span className="font-bold text-project-red text-xl  lg:text-3xl">
+                D-Pharma
+              </span>
+            </div>
+
+            <div className="">
+              <span className="">
+                <span className=" font-bold">Eligibility:</span>
+                50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
+                10+2 Duration :
+                <span className="text-project-red font-semibold">4 Years</span>
+              </span>
+            </div>
           </div>
-          <div className="Zilla flex flex-col">
-            <span className="font-bold text-xl lg:text-3xl">1000+</span>
-            <span className="font-semibold text-sm lg:text-xl">
-              Students Placed
-            </span>
+          <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
+
+          {/* D pharma */}
+          <div className="Zilla flex flex-row justify-center items-center gap-10 ">
+            <div className="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/4850/4850909.png"
+                alt=""
+                className="h-20"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2 items-start">
+              <div className="">
+                <span className="font-bold text-project-red text-xl  lg:text-3xl">
+                  G.N.M
+                </span>
+              </div>
+              <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
+              {/* <span className="font-bold text-project-red text-xl  lg:text-3xl">
+                A.N.M
+              </span>
+              <span className="font-bold text-project-red text-xl  lg:text-2xl">
+                B.Sc Nursing
+              </span> */}
+            </div>
+
+            <div className="">
+              <span className="">
+                <span className=" font-bold">Eligibility:</span>
+                50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
+                10+2 Duration :
+                <span className="text-project-red font-semibold">4 Years</span>
+              </span>
+            </div>
           </div>
+          <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
         </div>
       </div>
 

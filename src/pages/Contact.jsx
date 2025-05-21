@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
 import NameInfoBanner from "../components/NameInfoBanner";
+import Form from "../components/Form";
 
 const Contact = () => {
   ScrollToTop();
@@ -23,18 +24,24 @@ const Contact = () => {
 
         <div className="text-center Barlow text-xl lg:text-lg italic font-semibold">
           <p className="">Campus Address</p>
-          <p className="">Gateway Campus, Delhi-NCR,Sonipat - 131001</p>
-          <br /> <p className="">Phone: 0130 – 2231313</p>
-          {/* <p className="">Email: admissions@gateway.edu.in</p> */}
-          <br /> <p className="">Admission Helpline</p>
-          <p className="">Phone: (+91) 88005-53350</p>
-          <p className="">Phone: (+91) 74969-99258</p>
           <p className="">
-            Email: <span className="underline">admissions@gateway.edu.in</span>
+            Village-Tanda Khulasa Post-Rauzagaon, Rudauli, Ayodhya
+          </p>
+          <br />
+          {/* <br /> <p className="">Phone: 0130 – 2231313</p> */}
+          <p className="">
+            Email: <span className="underline">iimsrauzzagaon@gmail.com</span>
+          </p>
+          <br /> <p className="">Admission Helpline</p>
+          <p className="">Phone: (+91) 7905202014</p>
+          <p className="">Phone: (+91) 9116161612</p>
+          <p className="">
+            Email: <span className="underline">iimsrauzza@gmail.com</span>
           </p>
         </div>
       </div>
       <NameInfoBanner />
+      <Form />
     </div>
   );
 };

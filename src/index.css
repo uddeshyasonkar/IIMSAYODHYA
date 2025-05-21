@@ -25,6 +25,8 @@ html {
 @theme {
   --color-project-red: #d4281a;
   --color-project-sec-red: #ffe5e4;
+  /* --color-project-sec-red: #685fd4; */
+
   --color-project-black: #000000;
   --color-project-green: #03480e;
   --color-project-white: #ffffff;

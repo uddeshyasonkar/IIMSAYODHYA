@@ -10,7 +10,7 @@ const BannerNav = ({ bgImg, buttons = [] }) => {
       {/* <h2 className="text-white text-4xl font-bold mb-4">
         Welcome to Our Institute
       </h2> */}
-      <div className="flex gap-20 flex-wrap justify-center">
+      <div className="flex gap-5 lg:gap-20 flex-col lg:flex-row   justify-center">
         {buttons.map((btn, idx) => (
           <NavLink
             key={btn.to}
