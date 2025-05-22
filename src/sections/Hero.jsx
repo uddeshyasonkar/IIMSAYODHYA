@@ -48,10 +48,10 @@ const Hero = () => {
         </div>
         {/* Text Div */}
         <div className="flex-1 flex items-center justify-center Barlow ">
-          <div className="p-10 md:p-0 w-full lg:w-[55%] flex flex-col gap-6 items-center justify-center">
+          <div className="p-10 md:p-0 w-full lg:w-[55%] flex flex-col gap-6 items-start justify-center">
             {HeroData.map((data) => (
               <div className="flex justify-center items-center gap-6 ">
-                <span className=" text-4xl font-semibold">{data.number}</span>
+                <span className="text-4xl font-semibold">{data.number}</span>
                 <div className="flex flex-col items-start ">
                   <span className="text-lg font-medium">{data.title}</span>
                   <span className="text-left text-sm lg:text-base font-light ">
@@ -62,12 +62,12 @@ const Hero = () => {
             ))}
 
             <div className="relative mt-6">
-              <div className="min-w-60 lg:min-w-100 h-12 lg:h-14 rounded-full bg-transparent border-1 flex justify-center items-center gap-10 lg:gap-13 ">
+              <div className="min-w-60 lg:min-w-100 h-12 lg:h-14 rounded-full bg-transparent border-1 flex flex-row justify-center items-center gap-10 lg:gap-13 p-2">
                 {HeroData.map((data) => (
                   <span className="text-lg font-semibold ">{data.digits}</span>
                 ))}
               </div>
-              <div className="absolute -top-1 lg:-top-1.5 -left-1 lg:-left-2 min-w-60 lg:min-w-100 h-12 lg:h-14  rounded-full bg-transparent border-1 flex justify-center items-center gap-13 "></div>
+              <div className="absolute -top-1 lg:-top-1.5 -left-1 lg:-left-2 min-w-85 lg:min-w-100 h-14 lg:h-14  rounded-full bg-transparent border-1 flex justify-center items-center gap-13 "></div>
             </div>
           </div>
         </div>

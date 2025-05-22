@@ -4,28 +4,28 @@ import NameInfoBanner from "../components/NameInfoBanner";
 import Form from "../components/Form";
 
 const contactDetails = [
-  { title: "Front Office GIET", details: "0130 – 2231313, 9728100273" },
-  { title: "Front Office GCAD", details: "9992600600" },
-  { title: "Head HR", details: "Mr. Mandan Mishra: 7496999707" },
-  { title: "TPO and Head Alumni", details: "Ms. Geeta Kukreja: 9728100231" },
+  { title: "Front Office GIET", details: "XXXX-XX-XXXX" },
+  { title: "Front Office GCAD", details: "XXXX-XX-XXXX" },
+  { title: "Head HR", details: "Mr. John Doe: XXXX-XX-XXXX" },
+  { title: "TPO and Head Alumni", details: "Mr. John Doe: XXXX-XX-XXXX" },
   {
     title: "Director, Admissions & Outreach",
-    details: "Dr. Mohit Bansal: 8800553350",
+    details: "Mr. John Doe: XXXX-XX-XXXX",
   },
-  { title: "Registrar", details: "Mr. Harish Kumar: 9728100240" },
+  { title: "Registrar", details: "Mr. John Doe: XXXX-XX-XXXX" },
   {
     title: "Head Administrator",
-    details: "Mr. Lalit Gureja: 8295891200, 7496999255",
+    details: "Mr. John Doe: XXXX-XX-XXXX",
   },
-  { title: "Dean Academics", details: "Mr. Sunny Singla: 9050301180" },
+  { title: "Dean Academics", details: "Mr. John Doe: XXXX-XX-XXXX" },
   {
     title: "Dean Student Welfare",
-    details: "Mr. Ajay Kaushik: 9896896449",
+    details: "Mr. John Doe: XXXX-XX-XXXX",
   },
-  { title: "Head IT", details: "Mr. Yogesh Khokhar: 9812357277" },
+  { title: "Head IT", details: "Mr. John Doe: XXXX-XX-XXXX" },
   {
     title: "Chief Safety and Security Officer | Transport Incharge",
-    details: "Sub. Maj.(Retd.) Kuldeep Singh: 7496999254",
+    details: "Mr. John Doe: XXXX-XX-XXXX",
   },
 ];
 

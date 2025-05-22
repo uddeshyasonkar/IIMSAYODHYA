@@ -59,11 +59,18 @@ const NavBar = () => {
               INDIAN INSTITUTE OF MEDICAL SCIENCES, AYODHYA
             </h1>
 
-            <h3 className="Barlow text-xs lg:text-sm ">
+            {/* <h3 className="Barlow text-xs lg:text-sm ">
               Affiliated with Abdul Kalam Technical University and approved by
               the Government of Uttar Pradesh & Affiliated with Indian nursing
               council
+            </h3> */}
+            <h3 className="Barlow text-xs lg:text-sm ">
+              Affiliated with Abdul Kalam Technical University and approved by
+              the Government of Uttar Pradesh
             </h3>
+            <h4 className="Barlow text-xs lg:text-sm ">
+              Affiliated with Indian nursing council
+            </h4>
 
             <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12  text-sm font-bold">
               <li className="">

@@ -110,3 +110,18 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.label {
+  @apply block  mb-2;
+}
+
+.text-field {
+  @apply block outline-none bg-gray-200 border-project-black border-b w-full p-2 hover:bg-gray-300 duration-150;
+}
+
+.text-field::placeholder {
+  @apply text-sm font-medium text-gray-500;
+}
+
+.label {
+  @apply text-sm font-semibold;
+}
