@@ -15,14 +15,15 @@ const NameInfoBanner = () => {
       </div>
       <div className="flex-1">
         <p className="Barlow text-sm font-semibold text-justify">
-          Spread across an area of 12.58 acres, Medanta Lucknow is one of the
-          largest multi-super-specialty hospitals in Uttar Pradesh. Built with
-          the aim to provide highest standard of tertiary healthcare within the
-          state and to the neighbouring regions, the hospital brings together
-          internationally acclaimed doctors, exceptionally trained nurses and
-          paramedics, best-in-class technology and state-of-the-art
-          infrastructure to create an ecosystem of excellence that delivers
-          world-class, patient-centric, intergrated and affordable healthcare. 
+          Established in 2013, the Indian Institute of Medical Science and
+          Hospital is committed to providing job-oriented professional courses
+          in Nursing and Pharmacy. Our programs include Bachelor in Nursing (BSc
+          Nursing), Auxiliary Nursing Midwifery (ANM), General Nursing and
+          Midwifery (GNM), Diploma in Pharmacy (D.Pharma), and Bachelor in
+          Pharmacy (B.Pharma). Affiliation and Approval: Affiliated with Abdul
+          Kalam Technical University and approved by the Government of Uttar
+          Pradesh, we ensure that our students receive a quality education in a
+          conducive academic environment.
         </p>
       </div>
     </div>
