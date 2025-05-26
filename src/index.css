@@ -95,11 +95,11 @@ body {
   @apply flex flex-col justify-center items-start;
 }
 .courseSeats {
-  @apply font-bold text-2xl lg:text-3xl;
+  @apply font-normal text-project-red text-2xl lg:text-3xl;
 }
 
 .courseTitle {
-  @apply font-normal text-lg lg:text-2xl;
+  @apply font-bold text-lg lg:text-2xl;
 }
 
 /* .anmBlock {
@@ -124,4 +124,7 @@ body {
 
 .label {
   @apply text-sm font-semibold;
+}
+.invert-image {
+  filter: invert(100%);
 }

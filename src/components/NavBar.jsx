@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 // import { MenuRounded } from "@mui/icons-material";
@@ -39,17 +40,21 @@ const MobileMenu = styled.ul`
 `;
 
 const NavBar = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
+  console.log(pathName);
+
   const [isOpen, setisOpen] = useState(false);
   const [enabled, setEnabled] = useState(false);
   return (
     <nav className="navbar fixed top-0 left-0 w-full h-max  flex justify-between flex-col  lg:justify-between z-40 bg-project-sec-red shadow-lg">
       <div className="px-4 flex justify-between items-center  ">
-        <div className="flex gap-2 items-center justify-between">
+        <div className="flex gap-4 items-center justify-between">
           <NavLink to="/">
             <img
               src="./images/finallogo.webp"
               alt=""
-              className="w-30 lg:w-auto lg:h-25 "
+              className="w-30 lg:w-28 lg:h-25 "
             />
           </NavLink>
 
@@ -59,20 +64,22 @@ const NavBar = () => {
               INDIAN INSTITUTE OF MEDICAL SCIENCES, AYODHYA
             </h1>
 
-            {/* <h3 className="Barlow text-xs lg:text-sm ">
+            <h3 className="Barlow text-xs lg:text-sm ">
               Affiliated with Abdul Kalam Technical University and approved by
               the Government of Uttar Pradesh & Affiliated with Indian nursing
               council
-            </h3> */}
-            <h3 className="Barlow text-xs lg:text-sm ">
-              Affiliated with Abdul Kalam Technical University and approved by
-              the Government of Uttar Pradesh
             </h3>
-            <h4 className="Barlow text-xs lg:text-sm ">
+            {/* <h3 className="Barlow text-[12px] lg:text-sm ">
+              Affiliated with Abdul Kalam Technical University
+            </h3>
+            <h3 className="Barlow text-[12px] lg:text-sm ">
+              Approved by the Government of Uttar Pradesh
+            </h3> */}
+            <h4 className="Barlow text-[12px] lg:text-sm ">
               Affiliated with Indian nursing council
             </h4>
 
-            <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12  text-sm font-bold">
+            {/* <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12  text-sm font-bold">
               <li className="">
                 <NavLink to="/">HOME</NavLink>
               </li>
@@ -94,9 +101,97 @@ const NavBar = () => {
               <li className="">
                 <NavLink to="/contact-us">CONTACT US</NavLink>
               </li>
+            </ul> */}
+
+            <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12 text-sm font-bold">
+              <li className="">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  HOME
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/about-us"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  ABOUT US
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/admissions"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  ADMISSIONS
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/courses"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  COURSES
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/gallery"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  GALLERY
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/career"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  CAREER
+                </NavLink>
+              </li>
+              <li className="">
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-project-red text-base font-extrabold"
+                      : "text-project-black font-bold"
+                  }
+                >
+                  CONTACT US
+                </NavLink>
+              </li>
             </ul>
           </div>
 
+          {/* <div className=""></div> */}
           <Mobileicon onClick={() => setisOpen(!isOpen)}>
             {/* <MenuRounded sx={{ color: "inherit" }} /> */}
             <span class="material-symbols-outlined">menu</span>
@@ -134,6 +229,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -144,6 +244,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/about-us"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -154,6 +259,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/admissions"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -164,6 +274,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/courses"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -174,6 +289,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/gallery"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -184,6 +304,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/career"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}
@@ -194,6 +319,11 @@ const NavBar = () => {
         <li className="MobileMenuli ">
           <NavLink
             to="/contact-us"
+            className={({ isActive }) =>
+              isActive
+                ? "text-project-red text-base font-bold"
+                : "text-project-black font-normal"
+            }
             onClick={() => {
               setisOpen(!isOpen);
             }}

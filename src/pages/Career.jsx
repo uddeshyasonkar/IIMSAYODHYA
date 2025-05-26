@@ -13,7 +13,7 @@ const Career = () => {
       {" "}
       <div
         id="hero"
-        className="hero w-full min-h-max bg-project-white h-[80vh] lg:h-[90vh] flex flex-col  justify-center items-center gap-14 lg:gap-6 mt-10 md:mt-0 lg:pt-32 text-center relative"
+        className="hero w-full min-h-max bg-project-white h-[80vh] lg:h-[90vh] flex flex-col  justify-center items-center gap-14 lg:gap-6 mt-10 md:mt-0 pt-20 lg:pt-32 text-center relative"
       >
         {/* mt-30 lg:mt-15 */}
         <div className="lg:w-3/5 p-8 flex flex-col items-center gap-5">

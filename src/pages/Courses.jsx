@@ -12,7 +12,7 @@ const affiliations = [
   { id: 4, name: "Approved by the Pharmacy Council of India" },
   { id: 5, name: "Affiliated with the Board of Technical Education " },
   { id: 6, name: "Affiliated with Abdul Kalam Technical University" },
-  { id: 6, name: "Pharmacy Code: 3966" },
+  { id: 7, name: "Pharmacy Code: 3966" },
 ];
 
 const Courses = () => {
@@ -22,7 +22,7 @@ const Courses = () => {
       {/* Downloadable Pdf */}
       <div
         id="courses"
-        className="courses w-full min-h-max  h-[80vh] lg:h-[90vh] flex flex-col justify-center items-center gap-14 lg:gap-6 mt-30 md:mt-0 pt-10 lg:pt-40 text-center "
+        className="courses w-full min-h-max  h-[80vh] lg:h-[90vh] flex flex-col justify-center items-center gap-14 lg:gap-6 mt-30 md:mt-0 pt-20 lg:pt-40 text-center "
       >
         {/* <span className="text-2xl font-semibold Zilla">VIDEO/PHOTO</span> */}
 

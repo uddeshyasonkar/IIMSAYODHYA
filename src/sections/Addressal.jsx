@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const AddressalData = [
   {
@@ -94,17 +94,35 @@ future.
 
 const Addressal = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true); // State to handle fade-in and fade-out
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % AddressalData.length);
+    setFade(false); // Trigger fade-out
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % AddressalData.length);
+      setFade(true); // Trigger fade-in
+    }, 500); // Duration of fade-out
   };
 
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + AddressalData.length) % AddressalData.length
-    );
+    setFade(false); // Trigger fade-out
+    setTimeout(() => {
+      setCurrentIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + AddressalData.length) % AddressalData.length
+      );
+      setFade(true); // Trigger fade-in
+    }, 500); // Duration of fade-out
   };
+
+  // Automatically change the addressal every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 10000); // 10 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
 
   const currentData = AddressalData[currentIndex];
 
@@ -113,10 +131,14 @@ const Addressal = () => {
       id="addressal"
       className="addressal py-8 lg:py-20 w-full h-max flex flex-col items-center justify-center gap-8 lg:gap-0 text-center"
     >
-      <div className="flex  lg:w-2/3 flex-col lg:flex-row ">
-        <div className="flex-1 flex  items-center flex-col gap-6 p-4 lg:p-8 ">
+      <div className="flex lg:w-2/3 flex-col lg:flex-row">
+        <div
+          className={`flex-1 flex items-center flex-col gap-6 p-4 lg:p-8 transition-opacity duration-500 ${
+            fade ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <div
-            className="w-70 h-80 lg:h-110 lg:w-100 rounded-2xl overflow-hidden flex justify-center items-center"
+            className="w-70 h-80 lg:h-110 lg:w-100 rounded-2xl overflow-hidden flex justify-center items-center p-4 outline-solid outline-2 outline-offset-6 outline-project-black"
             style={{
               backgroundImage: `url(${currentData.imgUrl})`,
               backgroundSize: "cover",
@@ -125,30 +147,50 @@ const Addressal = () => {
           ></div>
 
           <div className="">
-            {/* name */}
+            {/* Name */}
             <p className="Zilla text-lg font-medium">{currentData.name}</p>
-            {/* title */}
+            {/* Title */}
             <span className="Barlow text-sm">{currentData.title}</span>
           </div>
         </div>
 
-        {/* Nav Buttons  */}
-        <div className="flex justify-center  lg:hidden gap-4  lg:mt-6 ">
+        {/* Nav Buttons for Mobile */}
+        <div className="flex justify-center lg:hidden gap-4 lg:mt-6">
           <button onClick={handlePrev} className="px-4 py-2 cursor-pointer">
-            <img src="./images/icons/arrow_left.png" alt="left" />
+            <div className="bg-white p-2 border-2 border-black hardShadow">
+              <div className="bg-black py-1 px-4">
+                <img
+                  className="invert-image w-6 h-6"
+                  src="./images/icons/arrow_left.png"
+                  alt="left"
+                />
+              </div>
+            </div>
           </button>
           <button onClick={handleNext} className="px-4 py-2 cursor-pointer">
-            <img src="./images/icons/arrow_right.png" alt="right" />
+            <div className="bg-white p-2 border-2 border-black hardShadow">
+              <div className="bg-black py-1 px-4">
+                <img
+                  className="invert-image w-6 h-6"
+                  src="./images/icons/arrow_right.png"
+                  alt="right"
+                />
+              </div>
+            </div>
           </button>
         </div>
 
-        <div className="Barlow flex-1 px-12 pt-8  flex flex-col gap-4 items-start  ">
-          {/* preAddressal */}
+        <div
+          className={`Barlow flex-1 px-12 pt-8 flex flex-col gap-4 items-start transition-opacity duration-500 ${
+            fade ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {/* PreAddressal */}
           <p className="w-full Zilla text-base font-semibold">
             {currentData.preAddressal}
           </p>
 
-          {/* addressal */}
+          {/* Addressal */}
           <p
             className="Zilla font-medium text-sm lg:text-sm leading-5"
             dangerouslySetInnerHTML={{ __html: currentData.addressal }}
@@ -156,13 +198,29 @@ const Addressal = () => {
         </div>
       </div>
 
-      {/* Nav Buttons */}
-      <div className="hidden lg:flex gap-4  lg:mt-6 ">
+      {/* Nav Buttons for Desktop */}
+      <div className="hidden lg:flex gap-4 lg:mt-6">
         <button onClick={handlePrev} className="px-4 py-2 cursor-pointer">
-          <img src="./images/icons/arrow_left.png" alt="left" />
+          <div className="bg-white p-2 border-2 border-black hardShadow">
+            <div className="bg-black py-1 px-4">
+              <img
+                className="invert-image w-6 h-6"
+                src="./images/icons/arrow_left.png"
+                alt="left"
+              />
+            </div>
+          </div>
         </button>
         <button onClick={handleNext} className="px-4 py-2 cursor-pointer">
-          <img src="./images/icons/arrow_right.png" alt="right" />
+          <div className="bg-white p-2 border-2 border-black hardShadow">
+            <div className="bg-black py-1 px-4">
+              <img
+                className="invert-image w-6 h-6"
+                src="./images/icons/arrow_right.png"
+                alt="right"
+              />
+            </div>
+          </div>
         </button>
       </div>
     </div>

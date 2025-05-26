@@ -56,12 +56,12 @@ const CourseGrid = () => {
       <h2 className="Zilla text-project-red text-2xl font-bold">
         COURSES OFFERED
       </h2>
-      <div className="border-black border-0 lg:border-2 py-4 lg:py-6 rounded-full bg-transparent lg:bg-project-white  w-full lg:w-[80%] flex flex-col lg:flex-row justify-center  lg:items-center gap-12 lg:gap-40 ">
+      <div className="border-black border-0 lg:border-2 py-4 lg:py-6 rounded-full  lg:bg-project-white  w-[2/3] lg:w-[80%] flex flex-col lg:flex-row justify-center items-start lg:items-center gap-12 lg:gap-40 bg-transparent">
         <div className="Zilla courseContainer">
           <img
             src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png"
             alt=""
-            className="h-20"
+            className="h-20 "
           />
           <div className="courseDetailsContainer ">
             <span className="courseSeats ">60 Seats</span>
@@ -73,7 +73,7 @@ const CourseGrid = () => {
           <img
             src="https://cdn-icons-png.flaticon.com/128/4320/4320337.png"
             alt=""
-            className="h-20"
+            className="h-20 "
           />
           <div className="courseDetailsContainer">
             <span className="courseSeats">60 Seats</span>
@@ -85,7 +85,7 @@ const CourseGrid = () => {
           <img
             src="https://cdn-icons-png.flaticon.com/128/4850/4850909.png"
             alt=""
-            className="h-20"
+            className="h-20 "
           />
           <div className="courseDetailsContainer">
             <span className="courseTitle">G.N.M./A.N.M.</span>

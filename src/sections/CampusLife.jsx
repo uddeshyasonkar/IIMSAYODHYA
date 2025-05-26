@@ -86,8 +86,8 @@ const CampusLife = () => {
             ))}
           </div>
         </div>
-        <div className="flex-1 flex justify-center items-center  p-6 md:p-6">
-          <div className="grid grid-cols-3 gap-1 lg:gap-1  sm:grid-cols-3">
+        <div className="flex-1 flex justify-center items-center  p-6 md:p-6 ">
+          <div className="grid grid-cols-3 gap-1 lg:gap-1  sm:grid-cols-3 border-2 border-black border-solid p-2  hardShadow">
             {feedImages.map((image, index) => (
               <div key={index} className="aspect-square overflow-hidden">
                 <img

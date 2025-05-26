@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ReactLenis from "lenis/react";
 import LocomotiveScroll from "locomotive-scroll";
 
@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import BottomContainer from "./sections/BottomContainer";
+import SocialsBar from "./components/SocialsBar";
 
 function WrappedApp() {
   // Routes
@@ -28,6 +29,7 @@ function WrappedApp() {
   return (
     <div className="App w-full h-screen">
       <NavBar />
+      <SocialsBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />

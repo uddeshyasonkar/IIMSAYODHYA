@@ -48,10 +48,14 @@ const Hero = () => {
         </div>
         {/* Text Div */}
         <div className="flex-1 flex items-center justify-center Barlow ">
-          <div className="p-10 md:p-0 w-full lg:w-[55%] flex flex-col gap-6 items-start justify-center">
+          <div className="p-10 md:p-0 w-full lg:w-[55%] flex flex-col gap-6 items-start justify-center ">
             {HeroData.map((data) => (
               <div className="flex justify-center items-center gap-6 ">
-                <span className="text-4xl font-semibold">{data.number}</span>
+                <div className="flex  ">
+                  <span className="w-[40px] lg:w-[50px] text-left text-4xl font-semibold  ">
+                    {data.number}
+                  </span>
+                </div>
                 <div className="flex flex-col items-start ">
                   <span className="text-lg font-medium">{data.title}</span>
                   <span className="text-left text-sm lg:text-base font-light ">
