@@ -71,11 +71,11 @@ function App() {
   //   // const locomotiveScroll = new LocomotiveScroll();
   // }, []);
   return (
-    // <ReactLenis root>
-    <BrowserRouter>
-      <WrappedApp />
-    </BrowserRouter>
-    //  </ReactLenis>
+    <ReactLenis root>
+      <BrowserRouter>
+        <WrappedApp />
+      </BrowserRouter>
+    </ReactLenis>
   );
 }
 
