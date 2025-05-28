@@ -33,9 +33,9 @@ const ModulesData = [
     id: 4,
     icon: "./images/icons/News.png",
     title: "IIMS IN PRESS",
-    isAnchor: false,
+    isAnchor: true,
     isLink: false,
-    url: "",
+    url: "https://www.facebook.com/reel/1337132607416845",
     description: "This is the description for module 1.",
   },
   {
