@@ -4,26 +4,50 @@ import "./Banner.css";
 const NoticesData = [
   {
     id: 1,
-    title: "ADMISSION OPEN FOR SESSION 2025-26",
+    title: "ADMISSION OPEN NOW",
     description: "This is the description for notice 1.",
     url: "#",
   },
   {
     id: 2,
-    title: "RESULT OF O-LEVEL SESSION 2025-2026",
-    description: "This is the description for notice 2.",
+    title: "•",
+    description: "This is the description for notice 1.",
     url: "#",
   },
   {
     id: 3,
-    title: "RESULTS 2025 7th Sem",
-    description: "This is the description for notice 3.",
+    title: "ADMISSION OPEN NOW",
+    description: "This is the description for notice 1.",
     url: "#",
   },
   {
     id: 4,
-    title: "RESULTS 2025 1st Sem",
-    description: "This is the description for notice 4.",
+    title: "•",
+    description: "This is the description for notice 1.",
+    url: "#",
+  },
+  {
+    id: 5,
+    title: "ADMISSION OPEN NOW",
+    description: "This is the description for notice 1.",
+    url: "#",
+  },
+  {
+    id: 6,
+    title: "•",
+    description: "This is the description for notice 1.",
+    url: "#",
+  },
+  {
+    id: 7,
+    title: "ADMISSION OPEN NOW",
+    description: "This is the description for notice 1.",
+    url: "#",
+  },
+  {
+    id: 8,
+    title: "•",
+    description: "This is the description for notice 1.",
     url: "#",
   },
 ];
