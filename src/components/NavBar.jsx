@@ -212,7 +212,7 @@ const NavBar = () => {
 
               <div className="hidden md:block">
                 <a
-                  href="./IIMS Final Prospectus.pdf"
+                  href="./IIMS_Final_Prospectus.pdf"
                   download
                   className="flex justify-center items-center gap-1 text-sm"
                 >
@@ -363,7 +363,7 @@ const NavBar = () => {
 
         <li className="MobileMenuli ">
           <a
-            href="./IIMS Final Prospectus.pdf"
+            href="./IIMS_Final_Prospectus.pdf"
             download
             className="flex justify-center items-center gap-1 text-sm font-bold"
             onClick={() => {

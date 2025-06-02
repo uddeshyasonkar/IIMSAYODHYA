@@ -14,7 +14,12 @@ const Home = () => {
     <div className="w-full min-h-screen">
       <Hero />
       <Notices />
-      <HeadingDivider title="DOWNLOAD PROSPECTUS" />
+      <HeadingDivider
+        title="DOWNLOAD PROSPECTUS"
+        icon="download"
+        isLink={true}
+        Link="/admissions"
+      />
       <Modules />
       <CampusLife />
       <Addressal />

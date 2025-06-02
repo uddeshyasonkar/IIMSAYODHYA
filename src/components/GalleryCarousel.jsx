@@ -2,17 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./GalleryCarousel.css";
 
-const images = [
-  "./images/carousel/1.jpg",
-  "./images/carousel/3.jpg",
-  "./images/carousel/4.jpg",
-  "./images/carousel/7.jpg",
-  "./images/carousel/8.jpg",
-  "./images/carousel/9.jpg",
-  "./images/carousel/10.jpg",
-];
-
-const GalleryCarousel = () => {
+const GalleryCarousel = ({ images }) => {
   const [mainImage, setMainImage] = useState(images[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
 

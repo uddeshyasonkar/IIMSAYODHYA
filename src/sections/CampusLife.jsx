@@ -4,7 +4,7 @@ const socials = [
   {
     id: 1,
     icon: "./images/icons/fb.png",
-    url: "https://www.facebook.com",
+    url: "https://www.facebook.com/IIMSHospital/",
   },
   {
     id: 2,
@@ -14,12 +14,12 @@ const socials = [
   {
     id: 3,
     icon: "./images/icons/instagram.png",
-    url: "https://www.instagram.com",
+    url: "https://www.instagram.com/iims_indian_hospital/",
   },
   {
     id: 4,
-    icon: "./images/icons/yt.png",
-    url: "https://www.youtube.com/",
+    icon: "./images/icons/wa.png",
+    url: "https://wa.me/+917905202014",
   },
 ];
 

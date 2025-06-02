@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Banner.css";
 
 const NoticesData = [
@@ -6,48 +7,72 @@ const NoticesData = [
     id: 1,
     title: "ADMISSION OPEN NOW",
     description: "This is the description for notice 1.",
-    url: "#",
+    isAnchor: false,
+    isLink: true,
+    isText: false,
+    url: "/admissions",
   },
   {
     id: 2,
     title: "•",
     description: "This is the description for notice 1.",
+    isAnchor: false,
+    isLink: false,
+    isText: true,
     url: "#",
   },
   {
     id: 3,
     title: "ADMISSION OPEN NOW",
     description: "This is the description for notice 1.",
-    url: "#",
+    isAnchor: false,
+    isLink: true,
+    isText: false,
+    url: "/admissions",
   },
   {
     id: 4,
     title: "•",
     description: "This is the description for notice 1.",
+    isAnchor: false,
+    isLink: false,
+    isText: true,
     url: "#",
   },
   {
     id: 5,
     title: "ADMISSION OPEN NOW",
     description: "This is the description for notice 1.",
-    url: "#",
+    isAnhor: false,
+    isLink: true,
+    isText: false,
+    url: "/admissions",
   },
   {
     id: 6,
     title: "•",
     description: "This is the description for notice 1.",
+    isAnchor: false,
+    isLink: false,
+    isText: true,
     url: "#",
   },
   {
     id: 7,
     title: "ADMISSION OPEN NOW",
     description: "This is the description for notice 1.",
-    url: "#",
+    isAnchor: false,
+    isLink: true,
+    isText: false,
+    url: "/admissions",
   },
   {
     id: 8,
     title: "•",
     description: "This is the description for notice 1.",
+    isAnchor: false,
+    isLink: false,
+    isText: true,
     url: "#",
   },
 ];
@@ -56,63 +81,110 @@ const Banner = () => {
   return (
     <div className="blobs py-[20px] lg:py-[60px]">
       <div className="blobs-slide">
-        {[...NoticesData].map((notice, index) => (
-          <a
-            key={index}
-            href={notice.url}
-            target="_blank"
-            className="blob-item cursor-pointer"
-          >
-            <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
-          </a>
-        ))}
+        {NoticesData.map((notice, index) => {
+          if (notice.isAnchor) {
+            return (
+              <a
+                href={notice.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </a>
+            );
+          } else if (notice.isLink) {
+            return (
+              <NavLink
+                to={notice.url}
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </NavLink>
+            );
+          } else if (notice.isText) {
+            return (
+              <span key={index} className="blob-item cursor-default">
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </span>
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
       <div className="blobs-slide">
-        {[...NoticesData].map((notice, index) => (
-          <a
-            key={index}
-            href={notice.url}
-            target="_blank"
-            className="blob-item cursor-pointer"
-          >
-            <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
-          </a>
-        ))}
+        {NoticesData.map((notice, index) => {
+          if (notice.isAnchor) {
+            return (
+              <a
+                href={notice.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </a>
+            );
+          } else if (notice.isLink) {
+            return (
+              <NavLink
+                to={notice.url}
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </NavLink>
+            );
+          } else if (notice.isText) {
+            return (
+              <span key={index} className="blob-item cursor-default">
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </span>
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
       <div className="blobs-slide">
-        {[...NoticesData].map((notice, index) => (
-          <a
-            key={index}
-            href={notice.url}
-            target="_blank"
-            className="blob-item cursor-pointer"
-          >
-            <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
-          </a>
-        ))}
+        {NoticesData.map((notice, index) => {
+          if (notice.isAnchor) {
+            return (
+              <a
+                href={notice.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </a>
+            );
+          } else if (notice.isLink) {
+            return (
+              <NavLink
+                to={notice.url}
+                key={index}
+                className="blob-item cursor-pointer"
+              >
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </NavLink>
+            );
+          } else if (notice.isText) {
+            return (
+              <span key={index} className="blob-item cursor-default">
+                <h3 className="Barlow text-sm lg:text-xl ">{notice.title}</h3>
+              </span>
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
-      {/* <div className="blobs-slide" aria-hidden="true">
-        {[...BlobData].map((blob, index) => (
-          <div
-            key={index}
-            className="blob-item"
-            style={{ backgroundColor: blob.color, color: blob.text }}
-          >
-            <span>{blob.tilte}</span>
-          </div>
-        ))}
-      </div> */}
-      {/* <div className="blobs-slide" aria-hidden="true">
-			{[...BlobData].map((blob, index) => (
-			  <div
-				key={index}
-				className="blob-item"
-				style={{ backgroundColor: blob.color, color: blob.text }}
-			  >
-				<span>{blob.tilte}</span>
-			  </div>
-			))}
-		  </div> */}
     </div>
   );
 };

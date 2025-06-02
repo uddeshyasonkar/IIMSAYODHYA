@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import ReactLenis from "lenis/react";
-import LocomotiveScroll from "locomotive-scroll";
+import Lenis from "lenis";
 
 import NavBar from "./components/NavBar";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Admissions from "./pages/Admissions";
@@ -26,6 +23,10 @@ function WrappedApp() {
   // -->Gallery
   // -->Career
   // -->ContactUs
+  const lenis = new Lenis({
+    autoRaf: true,
+  });
+
   return (
     <div className="App w-full h-screen">
       <NavBar />
@@ -50,32 +51,10 @@ function WrappedApp() {
 }
 
 function App() {
-  // useEffect(() => {
-  //   const lenis = new LocomotiveScroll({
-  //     el: document.querySelector("[data-scroll-container]"),
-  //     smooth: true,
-  //     multiplier: 1.5,
-  //     class: "is-reveal",
-  //     smartphone: {
-  //       smooth: true,
-  //       direction: "horizontal",
-  //     },
-  //   });
-  //   lenis.on("scroll", (e) => {
-  //     console.log(e);
-  //   });
-  //   return () => {
-  //     lenis.destroy();
-  //   };
-
-  //   // const locomotiveScroll = new LocomotiveScroll();
-  // }, []);
   return (
-    // <ReactLenis root>
     <BrowserRouter>
       <WrappedApp />
     </BrowserRouter>
-    // </ReactLenis>
   );
 }
 
