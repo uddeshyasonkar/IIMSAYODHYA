@@ -26,7 +26,7 @@ const Courses = () => {
       >
         {/* <span className="text-2xl font-semibold Zilla">VIDEO/PHOTO</span> */}
 
-        <div className="border-black border-0 lg:border-2 lg:mt-10 mt-0 py-6 rounded-[70px]  w-[90%] lg:w-[80%] flex flex-col  items-center gap-6 lg:gap-3 p-10">
+        <div className="border-black border-0 lg:border-2 lg:mt-10 mt-0 py-6 rounded-[70px]  w-[90%] lg:w-[80%] flex flex-col  items-center  lg:items gap-6 lg:gap-3 p-10">
           {/* B pharma */}
           <div className="Zilla flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 ">
             <div className="">
@@ -84,7 +84,7 @@ const Courses = () => {
           <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
 
           {/* GNM, ANM, Bsc Nursing */}
-          <div className="Zilla flex flex-col lg:flex-row  items-center gap-5 lg:gap-16 ">
+          <div className="w-full lg:w-[90%] lg:px-2 Zilla flex flex-col lg:flex-row  items-center gap-5 lg:gap-16 ">
             <div className="">
               <img
                 src="https://cdn-icons-png.flaticon.com/128/4850/4850909.png"
