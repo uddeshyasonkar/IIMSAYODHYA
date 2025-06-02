@@ -47,7 +47,7 @@ const Courses = () => {
               <span className="">
                 <span className=" font-bold">Eligibility:</span>
                 50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
-                10+2 Duration :
+                10+2 <span className=" font-bold"> Duration :</span>
                 <span className="text-project-red font-semibold">4 Years</span>
               </span>
             </div>
@@ -75,8 +75,8 @@ const Courses = () => {
               <span className="">
                 <span className=" font-bold">Eligibility:</span>
                 50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
-                10+2 Duration :
-                <span className="text-project-red font-semibold">4 Years</span>
+                10+2 <span className=" font-bold"> Duration :</span>
+                <span className="text-project-red font-semibold">2 Years</span>
               </span>
             </div>
           </div>
@@ -105,10 +105,10 @@ const Courses = () => {
                 <div className="text-left">
                   <span className="">
                     <span className=" font-bold">Eligibility:</span>
-                    50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM
-                    in 10+2 Duration :
+                    50% Marks in 10+2, For SC/ST 45% Marks in 10+2.
+                    <span className=" font-bold"> Duration :</span>
                     <span className="text-project-red font-semibold">
-                      4 Years
+                      3 Years
                     </span>
                   </span>
                 </div>
@@ -126,7 +126,8 @@ const Courses = () => {
                 <div className="text-left">
                   <span className="">
                     <span className=" font-bold">Eligibility:</span>
-                    Eligibility: Eligibility: 45% Marks in 10+2 Duration:
+                    Eligibility: Eligibility: 45% Marks in 10+2{" "}
+                    <span className=" font-bold"> Duration :</span>
                     <span className="text-project-red font-semibold">
                       2 Years
                     </span>
@@ -147,7 +148,7 @@ const Courses = () => {
                   <span className="">
                     <span className=" font-bold">Eligibility:</span>
                     Through counseling conducted by Atal Bihari bajpayi medical
-                    test Duration :
+                    test <span className=" font-bold"> Duration :</span>
                     <span className="text-project-red font-semibold">
                       4 Years
                     </span>

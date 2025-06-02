@@ -41,9 +41,9 @@ const Hero = () => {
         {/* Photo Div */}
         <div className="bg-gray-200 flex-1 flex items-center justify-center overflow-hidden">
           <img
-            src="./images/image.png"
+            src="./images/HomeImg.jpg"
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
         {/* Text Div */}
@@ -52,7 +52,7 @@ const Hero = () => {
             {HeroData.map((data) => (
               <div className="flex justify-center items-center gap-6 ">
                 <div className="flex  ">
-                  <span className="w-[40px] lg:w-[50px] text-left text-4xl font-semibold  ">
+                  <span className="w-[40px] lg:w-[50px] text-left text-4xl font-ssemibold  ">
                     {data.number}
                   </span>
                 </div>
