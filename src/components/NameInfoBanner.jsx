@@ -34,11 +34,11 @@ const NameInfoBanner = () => {
           Hospital is committed to providing job-oriented professional courses
           in Nursing and Pharmacy. Our programs include Bachelor in Nursing (BSc
           Nursing), Auxiliary Nursing Midwifery (ANM), General Nursing and
-          Midwifery (GNM), Diploma in Pharmacy (D.Pharma), and Bachelor in
-          Pharmacy (B.Pharma). Affiliation and Approval: Affiliated with Abdul
-          Kalam Technical University and approved by the Government of Uttar
-          Pradesh, we ensure that our students receive a quality education in a
-          conducive academic environment.
+          Midwifery (GNM), and Diploma in Pharmacy (D.Pharma). Affiliation and
+          Approval: Affiliated with Abdul Kalam Technical University and
+          approved by the Government of Uttar Pradesh, we ensure that our
+          students receive a quality education in a conducive academic
+          environment.
         </p>
       </div>
     </div>

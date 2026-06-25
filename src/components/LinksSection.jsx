@@ -33,7 +33,7 @@ const externalLinks = [
   { id: 3, name: "SWAYAM", url: "#" },
   { id: 4, name: "DigiLockers", url: "#" },
   // { id: 5, name: "Online RTI Portal, Rajasthan", url: "#" },
-  { id: 6, name: "B.Pharma Admissions", url: "#" },
+  // { id: 6, name: "B.Pharma Admissions", url: "#" },
 ];
 
 const Contact = [

@@ -28,15 +28,6 @@ const ModulesData = [
   },
   {
     id: 4,
-    icon: "./images/icons/News.png",
-    title: "B. Pharma (Bachelor in Pharmacy)",
-    isAnchor: false,
-    isLink: false,
-    url: "",
-    description: "This is the description for module 1.",
-  },
-  {
-    id: 5,
     icon: "./images/icons/Employee.png",
     title: "D. Pharma (Diploma in Pharmacy)",
     isAnchor: true,
@@ -56,18 +47,7 @@ const CourseGrid = () => {
       <h2 className="Zilla text-project-red text-2xl font-bold">
         COURSES OFFERED
       </h2>
-      <div className="border-black border-0 lg:border-2 py-4 lg:py-6 rounded-full  lg:bg-project-white  w-[2/3] lg:w-[80%] flex flex-col lg:flex-row justify-center items-start lg:items-center gap-12 lg:gap-40 bg-transparent">
-        <div className="Zilla courseContainer">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png"
-            alt=""
-            className="h-20 "
-          />
-          <div className="courseDetailsContainer ">
-            <span className="courseSeats ">60 Seats</span>
-            <span className="courseTitle ">B-Pharma</span>
-          </div>
-        </div>
+      <div className="border-black border-0 lg:border-2 py-4 lg:py-6 rounded-full  lg:bg-project-white  w-[2/3] lg:w-[80%] flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-40 bg-transparent">
 
         <div className="Zilla courseContainer">
           <img
@@ -76,7 +56,7 @@ const CourseGrid = () => {
             className="h-20 "
           />
           <div className="courseDetailsContainer">
-            <span className="courseSeats">60 Seats</span>
+            <span className="courseSeats">150+ Seats</span>
             <span className="courseTitle">D-Pharma</span>
           </div>
         </div>

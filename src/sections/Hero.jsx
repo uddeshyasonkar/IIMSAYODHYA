@@ -4,10 +4,10 @@ const HeroData = [
   {
     id: 1,
     number: "01",
-    digits: "160+ Seats",
-    title: "160+ Seats",
+    digits: "150+ Seats",
+    title: "150+ Seats",
     description:
-      "(D.PHARMA - 60 SEATS  |  B.PHARMA - 60 SEATS) (G.N.M | A.N.M | B.SC NURSING)",
+      "(D.PHARMA - 150+ SEATS) (G.N.M | A.N.M | B.SC NURSING)",
   },
   {
     id: 2,
@@ -20,9 +20,9 @@ const HeroData = [
   {
     id: 3,
     number: "03",
-    digits: "5 Courses",
-    title: "5 Courses",
-    description: " A.N.M., G.N.M., D. Pharma , B. Pharma, B.Sc Nursing",
+    digits: "4 Courses",
+    title: "4 Courses",
+    description: "A.N.M., G.N.M., D. Pharma, B.Sc Nursing",
   },
 ];
 

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Mobileicon = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1366px) {
     display: flex;
     align-items: center;
   }
@@ -34,7 +34,7 @@ const MobileMenu = styled.ul`
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1366px) {
     display: flex;
   }
 `;
@@ -49,6 +49,7 @@ const NavBar = () => {
   return (
     <nav className="navbar fixed top-0 left-0 w-full h-max  flex justify-between flex-col  lg:justify-between z-40 bg-project-sec-red shadow-lg">
       <div className="px-4 flex justify-between items-center  ">
+        <style>{`@media screen and (max-width: 1366px) { .desktop-menu { display: none !important; } }`}</style>
         <div className="w-full flex gap-4 items-center justify-start ">
           <NavLink to="/" className="hidden md:block">
             <img
@@ -95,7 +96,7 @@ const NavBar = () => {
                   </h4> */}
                 </div>
               </div>
-              <ul className="Zilla hidden md:flex gap-4 text-xs font-semibold">
+              <ul className="Zilla hidden md:flex gap-4 text-xs font-semibold desktop-menu">
                 <li className="">
                   <a href="http://erp.iimsandhospital.com/" target="_blank">
                     <img
@@ -123,7 +124,7 @@ const NavBar = () => {
             </div>
 
             <div className="flex items-center justify-between w-full px-4">
-              <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12 text-sm font-bold">
+              <ul className="Zilla my-4 lg:my-2 hidden md:flex items-center justify-start list-none gap-12 text-sm font-bold desktop-menu">
                 <li className="">
                   <NavLink
                     to="/"

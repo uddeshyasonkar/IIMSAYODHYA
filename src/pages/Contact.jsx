@@ -1,33 +1,6 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
 import NameInfoBanner from "../components/NameInfoBanner";
-import Form from "../components/Form";
-
-const contactDetails = [
-  { title: "Front Office GIET", details: "XXXX-XX-XXXX" },
-  { title: "Front Office GCAD", details: "XXXX-XX-XXXX" },
-  { title: "Head HR", details: "Mr. John Doe: XXXX-XX-XXXX" },
-  { title: "TPO and Head Alumni", details: "Mr. John Doe: XXXX-XX-XXXX" },
-  {
-    title: "Director, Admissions & Outreach",
-    details: "Mr. John Doe: XXXX-XX-XXXX",
-  },
-  { title: "Registrar", details: "Mr. John Doe: XXXX-XX-XXXX" },
-  {
-    title: "Head Administrator",
-    details: "Mr. John Doe: XXXX-XX-XXXX",
-  },
-  { title: "Dean Academics", details: "Mr. John Doe: XXXX-XX-XXXX" },
-  {
-    title: "Dean Student Welfare",
-    details: "Mr. John Doe: XXXX-XX-XXXX",
-  },
-  { title: "Head IT", details: "Mr. John Doe: XXXX-XX-XXXX" },
-  {
-    title: "Chief Safety and Security Officer | Transport Incharge",
-    details: "Mr. John Doe: XXXX-XX-XXXX",
-  },
-];
 
 const Contact = () => {
   ScrollToTop();
@@ -69,45 +42,9 @@ const Contact = () => {
       <NameInfoBanner />
 
       {/* <Form /> */}
-      <div className="py-10 px-6 p-0 lg:p-16 w-full h-max bg-project-white flex flex-col lg:flex-row items-center gap-10 lg:gap-16 text-center">
-        {/* Left Section: Table */}
-        <div className="w-full lg:w-1/2 bg-red-200">
-          <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300 text-left">
-              <thead>
-                <tr>
-                  <th className="px-4 py-2 bg-gray-100 text-gray-700 font-semibold border-b">
-                    Title
-                  </th>
-                  <th className="px-4 py-2 bg-gray-100 text-gray-700 font-semibold border-b">
-                    Details
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {contactDetails.map((item, index) => (
-                  <tr
-                    key={index}
-                    className={`${
-                      index % 2 === 0 ? "bg-gray-50" : "bg-white"
-                    } hover:bg-gray-100`}
-                  >
-                    <td className="px-2 py-1 border-b text-gray-700">
-                      {item.title}
-                    </td>
-                    <td className="px-2 py-1.5 border-b text-gray-700">
-                      {item.details}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Right Section: Form */}
-        <div className="w-full lg:w-1/2 bg-red-200">
-          <form className="bg-white shadow-md rounded-lg p-6 flex flex-col text-left gap-4">
+      <div className="py-10 px-6 lg:px-16 w-full h-max bg-project-white flex justify-center">
+        <div className="w-full lg:w-1/2">
+          <form className="mx-auto bg-white shadow-md rounded-lg p-6 flex flex-col text-left gap-4">
             <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
             <div className="mb-4">
               <label

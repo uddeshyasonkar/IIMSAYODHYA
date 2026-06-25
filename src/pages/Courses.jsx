@@ -22,39 +22,11 @@ const Courses = () => {
       {/* Downloadable Pdf */}
       <div
         id="courses"
-        className="courses w-full min-h-max  h-[80vh] lg:h-[90vh] flex flex-col justify-center items-center gap-14 lg:gap-6 mt-30 md:mt-0 pt-20 lg:pt-40 text-center "
+        className="courses w-full min-h-max  h-[80vh] lg:h-[90vh] flex flex-col justify-center items-center gap-14 lg:gap-6 mt-30 md:mt-0 pt-32 pb-12 lg:pt-48 lg:pb-16 text-center "
       >
         {/* <span className="text-2xl font-semibold Zilla">VIDEO/PHOTO</span> */}
 
         <div className="border-black border-0 lg:border-2 lg:mt-10 mt-0 py-6 rounded-[70px]  w-[90%] lg:w-[80%] flex flex-col  items-center   gap-6 lg:gap-3 p-10">
-          {/* B pharma */}
-          <div className="Zilla flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 ">
-            <div className="">
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png"
-                alt=""
-                className="h-12 lg:h-20"
-              />
-            </div>
-
-            <div className="">
-              <span className="font-bold text-project-red text-3xl  lg:text-3xl">
-                B-Pharma
-              </span>
-            </div>
-
-            <div className="text-left">
-              <span className="">
-                <span className=" font-bold">Eligibility:</span>
-                50% Marks in PCB/PCM in 10+2, For SC/ST 45% Marks in PCB/PCM in
-                10+2 <span className=" font-bold"> Duration :</span>
-                <span className="text-project-red font-semibold">4 Years</span>
-              </span>
-            </div>
-          </div>
-          {/* divider */}
-          <div className="w-[90%] h-[2px] bg-gray-400 my-[10px]"></div>
-
           {/* D pharma */}
           <div className="Zilla flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 ">
             <div className="">
